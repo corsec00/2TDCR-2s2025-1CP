@@ -19,7 +19,7 @@ try {
     # Obter configurações do ambiente
     $networkCIDR = $env:NETWORK_CIDR
     if (-not $networkCIDR) {
-        $networkCIDR = "10.1.2.0/24"
+        $networkCIDR = "10.1.1.0/24"
         Write-Warning "NETWORK_CIDR não configurado, usando padrão: $networkCIDR"
     }
 

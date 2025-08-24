@@ -149,7 +149,7 @@ if ($LASTEXITCODE -eq 0) {
 
 # Deploy do código
 Write-Host "🚀 Fazendo deploy do código PowerShell..." -ForegroundColor Cyan
-func azure functionapp publish $FunctionApp
+func azure functionapp publish $FunctionApp --powershell
 
 if ($LASTEXITCODE -eq 0) {
     Write-Host "✅ Deploy concluído!" -ForegroundColor Green
