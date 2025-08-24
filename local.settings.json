@@ -1,0 +1,7 @@
+{
+  "Values": {
+    "MAX_WORKERS": "30",
+    "SAVE_DETAILED_RESULTS": "false",
+    "NETWORK_CIDR": "10.1.1.0/24"
+  }
+}

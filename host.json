@@ -1,0 +1,39 @@
+{
+  "version": "2.0",
+  "managedDependency": {
+    "Enabled": true
+  },
+  "extensionBundle": {
+    "id": "Microsoft.Azure.Functions.ExtensionBundle",
+    "version": "[3.*, 4.0.0)"
+  },
+  "functionTimeout": "00:10:00",
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      }
+    },
+    "logLevel": {
+      "default": "Information",
+      "Host.Results": "Information",
+      "Function": "Information",
+      "Host.Aggregator": "Information"
+    }
+  },
+  "healthMonitor": {
+    "enabled": true,
+    "healthCheckInterval": "00:00:10",
+    "healthCheckWindow": "00:02:00",
+    "healthCheckThreshold": 6,
+    "counterThreshold": 0.80
+  },
+  "http": {
+    "routePrefix": "api",
+    "maxOutstandingRequests": 200,
+    "maxConcurrentRequests": 100,
+    "dynamicThrottlesEnabled": true
+  }
+}
+

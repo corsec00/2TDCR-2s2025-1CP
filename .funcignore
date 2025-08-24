@@ -1,0 +1,39 @@
+# PowerShell specific
+*.ps1xml
+*.psd1.bak
+*.psm1.bak
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Azure Functions
+.azure/
+.vscode/
+local.settings.json
+.git/
+
+# Backup files
+*.bak
+*.backup
+*.tmp
+
+# Test files
+test_*.ps1
+*_test.ps1
+
